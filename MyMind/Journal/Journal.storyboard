@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wb5-eH-cqc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ez3-Bk-sPn">
+            <objects>
+                <viewController id="uPF-wL-EhY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bwt-C1-QL3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOURNAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ee-6v-QUY">
+                                <rect key="frame" x="124" y="407" width="144" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Jh-xo-UVP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9ee-6v-QUY" firstAttribute="centerX" secondItem="bwt-C1-QL3" secondAttribute="centerX" id="c8v-ds-9U5"/>
+                            <constraint firstItem="9ee-6v-QUY" firstAttribute="centerY" secondItem="bwt-C1-QL3" secondAttribute="centerY" id="vW4-S0-NnF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WsX-mp-HPZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umv-Pv-OSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6005" y="1286"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="4p8-Dt-dRg">
+            <objects>
+                <navigationController id="Wb5-eH-cqc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="CQd-kS-uQ1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OLz-iu-tpO">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uPF-wL-EhY" kind="relationship" relationship="rootViewController" id="RWZ-3Q-gT9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ptt-i0-RVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4935" y="1286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
