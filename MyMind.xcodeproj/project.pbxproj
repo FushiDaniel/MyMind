@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		764297822BF4F3A000FA3A98 /* StartLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297812BF4F3A000FA3A98 /* StartLogin.storyboard */; };
+		7642978C2BF5C0D700FA3A98 /* Journal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7642978B2BF5C0D700FA3A98 /* Journal.storyboard */; };
+		7642978E2BF5C29500FA3A98 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642978D2BF5C29500FA3A98 /* JournalViewController.swift */; };
+		764297942BF5C35E00FA3A98 /* Prochat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297932BF5C35E00FA3A98 /* Prochat.storyboard */; };
+		764297962BF5C37D00FA3A98 /* Reminder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297952BF5C37D00FA3A98 /* Reminder.storyboard */; };
+		764297982BF5C39900FA3A98 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297972BF5C39900FA3A98 /* Homepage.storyboard */; };
+		7642979A2BF5C3B800FA3A98 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764297992BF5C3B800FA3A98 /* ReminderViewController.swift */; };
+		7642979C2BF5C3C500FA3A98 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642979B2BF5C3C500FA3A98 /* HomepageViewController.swift */; };
+		7642979E2BF5C3DA00FA3A98 /* ProchatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642979D2BF5C3DA00FA3A98 /* ProchatViewController.swift */; };
 		CEC0FBC52BF1CD2700C4266C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FBC42BF1CD2700C4266C /* AppDelegate.swift */; };
 		CEC0FBC72BF1CD2700C4266C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FBC62BF1CD2700C4266C /* SceneDelegate.swift */; };
 		CEC0FBC92BF1CD2700C4266C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FBC82BF1CD2700C4266C /* ViewController.swift */; };
@@ -16,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		764297812BF4F3A000FA3A98 /* StartLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartLogin.storyboard; sourceTree = "<group>"; };
+		7642978B2BF5C0D700FA3A98 /* Journal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Journal.storyboard; sourceTree = "<group>"; };
+		7642978D2BF5C29500FA3A98 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		764297932BF5C35E00FA3A98 /* Prochat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Prochat.storyboard; sourceTree = "<group>"; };
+		764297952BF5C37D00FA3A98 /* Reminder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reminder.storyboard; sourceTree = "<group>"; };
+		764297972BF5C39900FA3A98 /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
+		764297992BF5C3B800FA3A98 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		7642979B2BF5C3C500FA3A98 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		7642979D2BF5C3DA00FA3A98 /* ProchatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProchatViewController.swift; sourceTree = "<group>"; };
 		CEC0FBC12BF1CD2700C4266C /* MyMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0FBC42BF1CD2700C4266C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC0FBC62BF1CD2700C4266C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +55,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7642978F2BF5C29E00FA3A98 /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				7642978B2BF5C0D700FA3A98 /* Journal.storyboard */,
+				7642978D2BF5C29500FA3A98 /* JournalViewController.swift */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		764297902BF5C2F000FA3A98 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				764297972BF5C39900FA3A98 /* Homepage.storyboard */,
+				7642979B2BF5C3C500FA3A98 /* HomepageViewController.swift */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		764297912BF5C30200FA3A98 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				764297952BF5C37D00FA3A98 /* Reminder.storyboard */,
+				764297992BF5C3B800FA3A98 /* ReminderViewController.swift */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+		764297922BF5C30F00FA3A98 /* Prochat */ = {
+			isa = PBXGroup;
+			children = (
+				764297932BF5C35E00FA3A98 /* Prochat.storyboard */,
+				7642979D2BF5C3DA00FA3A98 /* ProchatViewController.swift */,
+			);
+			path = Prochat;
+			sourceTree = "<group>";
+		};
 		CEC0FBB82BF1CD2700C4266C = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +110,18 @@
 		CEC0FBC32BF1CD2700C4266C /* MyMind */ = {
 			isa = PBXGroup;
 			children = (
+				764297902BF5C2F000FA3A98 /* Homepage */,
+				764297912BF5C30200FA3A98 /* Reminder */,
+				7642978F2BF5C29E00FA3A98 /* Journal */,
+				764297922BF5C30F00FA3A98 /* Prochat */,
 				CEC0FBC42BF1CD2700C4266C /* AppDelegate.swift */,
 				CEC0FBC62BF1CD2700C4266C /* SceneDelegate.swift */,
 				CEC0FBC82BF1CD2700C4266C /* ViewController.swift */,
-				CEC0FBCA2BF1CD2700C4266C /* Main.storyboard */,
 				CEC0FBCD2BF1CD2900C4266C /* Assets.xcassets */,
-				CEC0FBCF2BF1CD2900C4266C /* LaunchScreen.storyboard */,
 				CEC0FBD22BF1CD2A00C4266C /* Info.plist */,
+				764297812BF4F3A000FA3A98 /* StartLogin.storyboard */,
+				CEC0FBCA2BF1CD2700C4266C /* Main.storyboard */,
+				CEC0FBCF2BF1CD2900C4266C /* LaunchScreen.storyboard */,
 			);
 			path = MyMind;
 			sourceTree = "<group>";
@@ -125,9 +184,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764297982BF5C39900FA3A98 /* Homepage.storyboard in Resources */,
 				CEC0FBD12BF1CD2900C4266C /* LaunchScreen.storyboard in Resources */,
 				CEC0FBCE2BF1CD2900C4266C /* Assets.xcassets in Resources */,
+				764297942BF5C35E00FA3A98 /* Prochat.storyboard in Resources */,
 				CEC0FBCC2BF1CD2700C4266C /* Main.storyboard in Resources */,
+				764297822BF4F3A000FA3A98 /* StartLogin.storyboard in Resources */,
+				7642978C2BF5C0D700FA3A98 /* Journal.storyboard in Resources */,
+				764297962BF5C37D00FA3A98 /* Reminder.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +202,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7642978E2BF5C29500FA3A98 /* JournalViewController.swift in Sources */,
 				CEC0FBC92BF1CD2700C4266C /* ViewController.swift in Sources */,
+				7642979C2BF5C3C500FA3A98 /* HomepageViewController.swift in Sources */,
+				7642979A2BF5C3B800FA3A98 /* ReminderViewController.swift in Sources */,
 				CEC0FBC52BF1CD2700C4266C /* AppDelegate.swift in Sources */,
+				7642979E2BF5C3DA00FA3A98 /* ProchatViewController.swift in Sources */,
 				CEC0FBC72BF1CD2700C4266C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,8 +359,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyMind/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = StartLogin.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = StartLogin;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,8 +387,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyMind/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = StartLogin.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = StartLogin;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
