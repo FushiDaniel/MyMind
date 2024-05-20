@@ -16,6 +16,8 @@
 		7642979A2BF5C3B800FA3A98 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764297992BF5C3B800FA3A98 /* ReminderViewController.swift */; };
 		7642979C2BF5C3C500FA3A98 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642979B2BF5C3C500FA3A98 /* HomepageViewController.swift */; };
 		7642979E2BF5C3DA00FA3A98 /* ProchatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642979D2BF5C3DA00FA3A98 /* ProchatViewController.swift */; };
+		7687F9252BFB48AD0090F31A /* ChatScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687F9242BFB48AD0090F31A /* ChatScreenViewController.swift */; };
+		7687F9282BFB48FB0090F31A /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7687F9272BFB48FB0090F31A /* MessageKit */; };
 		CEC0FBC52BF1CD2700C4266C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FBC42BF1CD2700C4266C /* AppDelegate.swift */; };
 		CEC0FBC72BF1CD2700C4266C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FBC62BF1CD2700C4266C /* SceneDelegate.swift */; };
 		CEC0FBC92BF1CD2700C4266C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FBC82BF1CD2700C4266C /* ViewController.swift */; };
@@ -34,6 +36,7 @@
 		764297992BF5C3B800FA3A98 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		7642979B2BF5C3C500FA3A98 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		7642979D2BF5C3DA00FA3A98 /* ProchatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProchatViewController.swift; sourceTree = "<group>"; };
+		7687F9242BFB48AD0090F31A /* ChatScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenViewController.swift; sourceTree = "<group>"; };
 		CEC0FBC12BF1CD2700C4266C /* MyMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0FBC42BF1CD2700C4266C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC0FBC62BF1CD2700C4266C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7687F9282BFB48FB0090F31A /* MessageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +91,7 @@
 			children = (
 				764297932BF5C35E00FA3A98 /* Prochat.storyboard */,
 				7642979D2BF5C3DA00FA3A98 /* ProchatViewController.swift */,
+				7687F9242BFB48AD0090F31A /* ChatScreenViewController.swift */,
 			);
 			path = Prochat;
 			sourceTree = "<group>";
@@ -142,6 +147,9 @@
 			dependencies = (
 			);
 			name = MyMind;
+			packageProductDependencies = (
+				7687F9272BFB48FB0090F31A /* MessageKit */,
+			);
 			productName = MyMind;
 			productReference = CEC0FBC12BF1CD2700C4266C /* MyMind.app */;
 			productType = "com.apple.product-type.application";
@@ -170,6 +178,9 @@
 				Base,
 			);
 			mainGroup = CEC0FBB82BF1CD2700C4266C;
+			packageReferences = (
+				7687F9262BFB48FB0090F31A /* XCRemoteSwiftPackageReference "MessageKit" */,
+			);
 			productRefGroup = CEC0FBC22BF1CD2700C4266C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -202,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7687F9252BFB48AD0090F31A /* ChatScreenViewController.swift in Sources */,
 				7642978E2BF5C29500FA3A98 /* JournalViewController.swift in Sources */,
 				CEC0FBC92BF1CD2700C4266C /* ViewController.swift in Sources */,
 				7642979C2BF5C3C500FA3A98 /* HomepageViewController.swift in Sources */,
@@ -426,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7687F9262BFB48FB0090F31A /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7687F9272BFB48FB0090F31A /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7687F9262BFB48FB0090F31A /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEC0FBB92BF1CD2700C4266C /* Project object */;
 }

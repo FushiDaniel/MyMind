@@ -2,39 +2,52 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JcE-WZ-z8c">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Pro-Chat-->
         <scene sceneID="jmj-jp-1Hh">
             <objects>
-                <viewController id="hMn-By-xyQ" sceneMemberID="viewController">
+                <viewController id="hMn-By-xyQ" customClass="ProchatViewController" customModule="MyMind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IqD-AZ-944">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROCHAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOs-0c-3gp">
-                                <rect key="frame" x="124" y="406.66666666666669" width="145" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZg-fm-6u7">
+                                <rect key="frame" x="20" y="112.99999999999997" width="353" height="418.33333333333326"/>
+                                <color key="backgroundColor" red="0.99215686319999996" green="1" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TZg-fm-6u7" secondAttribute="height" multiplier="335:397" id="aBb-6w-MCT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <backgroundConfiguration key="background" image="TherapistCard" imageContentMode="scaleAspectFill">
+                                        <color key="backgroundColor" red="0.99215686319999996" green="1" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="JLm-gS-sWM" kind="show" id="vCG-Bx-fnj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EW7-3H-LKE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99215686319999996" green="1" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="UOs-0c-3gp" firstAttribute="centerX" secondItem="IqD-AZ-944" secondAttribute="centerX" id="H74-xC-mWZ"/>
-                            <constraint firstItem="UOs-0c-3gp" firstAttribute="centerY" secondItem="IqD-AZ-944" secondAttribute="centerY" id="Weg-NO-xTK"/>
+                            <constraint firstItem="TZg-fm-6u7" firstAttribute="top" secondItem="EW7-3H-LKE" secondAttribute="top" constant="10" id="D3h-hW-B2e"/>
+                            <constraint firstItem="TZg-fm-6u7" firstAttribute="leading" secondItem="EW7-3H-LKE" secondAttribute="leading" constant="20" id="YgJ-PB-wsb"/>
+                            <constraint firstItem="TZg-fm-6u7" firstAttribute="centerX" secondItem="IqD-AZ-944" secondAttribute="centerX" id="gqh-ph-wNz"/>
+                            <constraint firstItem="EW7-3H-LKE" firstAttribute="trailing" secondItem="TZg-fm-6u7" secondAttribute="trailing" constant="20" id="w3I-rh-pNC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="pyW-xt-Q0d"/>
+                    <navigationItem key="navigationItem" title="Pro-Chat" id="pyW-xt-Q0d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPH-dK-Y7V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6005" y="468"/>
+            <point key="canvasLocation" x="6003.8167938931292" y="467.6056338028169"/>
         </scene>
         <!--Item-->
         <scene sceneID="Tte-vg-z21">
@@ -53,8 +66,37 @@
             </objects>
             <point key="canvasLocation" x="4935" y="467"/>
         </scene>
+        <!--Dr. Farhan-->
+        <scene sceneID="BpP-6p-nqD">
+            <objects>
+                <viewController id="JLm-gS-sWM" customClass="ChatScreenViewController" customModule="MyMind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="26a-aj-GiE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zqf-TC-FYv">
+                                <rect key="frame" x="0.0" y="113" width="393" height="705"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YGe-tz-xwh"/>
+                        <color key="backgroundColor" red="0.99215686319999996" green="1" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="zqf-TC-FYv" firstAttribute="bottom" secondItem="YGe-tz-xwh" secondAttribute="bottom" id="1V4-BP-qFT"/>
+                            <constraint firstItem="YGe-tz-xwh" firstAttribute="trailing" secondItem="zqf-TC-FYv" secondAttribute="trailing" id="Jkn-7q-eUC"/>
+                            <constraint firstItem="zqf-TC-FYv" firstAttribute="top" secondItem="YGe-tz-xwh" secondAttribute="top" constant="10" id="Zbx-5p-yyP"/>
+                            <constraint firstItem="zqf-TC-FYv" firstAttribute="leading" secondItem="YGe-tz-xwh" secondAttribute="leading" id="r7c-j8-tKm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dr. Farhan" id="WZR-eg-kdH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gkx-hS-nbc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7221" y="468"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="TherapistCard" width="419" height="493"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
