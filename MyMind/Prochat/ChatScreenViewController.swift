@@ -85,7 +85,9 @@ class ChatScreenViewController: MessagesViewController, MessagesDataSource, Mess
     }
     
     private func iconOnNavBar(){
-        let image = UIImage(systemName: "phone.fill")
+        var image = UIImage(systemName: "phone.fill")
+        let imageColour = UIColor(named: "DarkTint")
+        image = image?.withTintColor(imageColour ?? .black, renderingMode: .alwaysOriginal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: image,
             style: .plain,

@@ -16,6 +16,7 @@
 		7642979A2BF5C3B800FA3A98 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764297992BF5C3B800FA3A98 /* ReminderViewController.swift */; };
 		7642979C2BF5C3C500FA3A98 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642979B2BF5C3C500FA3A98 /* HomepageViewController.swift */; };
 		7642979E2BF5C3DA00FA3A98 /* ProchatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642979D2BF5C3DA00FA3A98 /* ProchatViewController.swift */; };
+		767535BA2BFC807F00F54D34 /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767535B92BFC807F00F54D34 /* ProfilePage.storyboard */; };
 		7687F9252BFB48AD0090F31A /* ChatScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687F9242BFB48AD0090F31A /* ChatScreenViewController.swift */; };
 		7687F9282BFB48FB0090F31A /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7687F9272BFB48FB0090F31A /* MessageKit */; };
 		CEC0FBC52BF1CD2700C4266C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FBC42BF1CD2700C4266C /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 		764297992BF5C3B800FA3A98 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		7642979B2BF5C3C500FA3A98 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		7642979D2BF5C3DA00FA3A98 /* ProchatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProchatViewController.swift; sourceTree = "<group>"; };
+		767535B92BFC807F00F54D34 /* ProfilePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
 		7687F9242BFB48AD0090F31A /* ChatScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenViewController.swift; sourceTree = "<group>"; };
 		CEC0FBC12BF1CD2700C4266C /* MyMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC0FBC42BF1CD2700C4266C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 			path = Prochat;
 			sourceTree = "<group>";
 		};
+		767535BB2BFC808500F54D34 /* ProfilePage */ = {
+			isa = PBXGroup;
+			children = (
+				767535B92BFC807F00F54D34 /* ProfilePage.storyboard */,
+			);
+			path = ProfilePage;
+			sourceTree = "<group>";
+		};
 		CEC0FBB82BF1CD2700C4266C = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 				764297912BF5C30200FA3A98 /* Reminder */,
 				7642978F2BF5C29E00FA3A98 /* Journal */,
 				764297922BF5C30F00FA3A98 /* Prochat */,
+				767535BB2BFC808500F54D34 /* ProfilePage */,
 				CEC0FBC42BF1CD2700C4266C /* AppDelegate.swift */,
 				CEC0FBC62BF1CD2700C4266C /* SceneDelegate.swift */,
 				CEC0FBC82BF1CD2700C4266C /* ViewController.swift */,
@@ -199,6 +210,7 @@
 				CEC0FBD12BF1CD2900C4266C /* LaunchScreen.storyboard in Resources */,
 				CEC0FBCE2BF1CD2900C4266C /* Assets.xcassets in Resources */,
 				764297942BF5C35E00FA3A98 /* Prochat.storyboard in Resources */,
+				767535BA2BFC807F00F54D34 /* ProfilePage.storyboard in Resources */,
 				CEC0FBCC2BF1CD2700C4266C /* Main.storyboard in Resources */,
 				764297822BF4F3A000FA3A98 /* StartLogin.storyboard in Resources */,
 				7642978C2BF5C0D700FA3A98 /* Journal.storyboard in Resources */,
