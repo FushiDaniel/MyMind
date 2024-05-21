@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30B923A72BFCA1600098CB19 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B923A02BFCA1600098CB19 /* Journal.swift */; };
+		30B923A82BFCA1600098CB19 /* JournalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B923A12BFCA1600098CB19 /* JournalDetailViewController.swift */; };
+		30B923A92BFCA1600098CB19 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B923A22BFCA1600098CB19 /* JournalViewController.swift */; };
+		30B923AA2BFCA1600098CB19 /* Journal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B923A32BFCA1600098CB19 /* Journal.storyboard */; };
+		30B923AB2BFCA1600098CB19 /* NewJournalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B923A42BFCA1600098CB19 /* NewJournalCollectionViewCell.swift */; };
+		30B923AC2BFCA1600098CB19 /* JournalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B923A52BFCA1600098CB19 /* JournalCollectionViewCell.swift */; };
+		30B923AD2BFCA1600098CB19 /* AddJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B923A62BFCA1600098CB19 /* AddJournalViewController.swift */; };
 		764297822BF4F3A000FA3A98 /* StartLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297812BF4F3A000FA3A98 /* StartLogin.storyboard */; };
-		7642978C2BF5C0D700FA3A98 /* Journal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7642978B2BF5C0D700FA3A98 /* Journal.storyboard */; };
-		7642978E2BF5C29500FA3A98 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642978D2BF5C29500FA3A98 /* JournalViewController.swift */; };
 		764297942BF5C35E00FA3A98 /* Prochat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297932BF5C35E00FA3A98 /* Prochat.storyboard */; };
 		764297962BF5C37D00FA3A98 /* Reminder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297952BF5C37D00FA3A98 /* Reminder.storyboard */; };
 		764297982BF5C39900FA3A98 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297972BF5C39900FA3A98 /* Homepage.storyboard */; };
@@ -28,9 +33,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30B923A02BFCA1600098CB19 /* Journal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Journal.swift; path = "../../../MyMind copy 2/MyMind/Journal/Journal.swift"; sourceTree = "<group>"; };
+		30B923A12BFCA1600098CB19 /* JournalDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalDetailViewController.swift; path = "../../../MyMind copy 2/MyMind/Journal/JournalDetailViewController.swift"; sourceTree = "<group>"; };
+		30B923A22BFCA1600098CB19 /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		30B923A32BFCA1600098CB19 /* Journal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Journal.storyboard; sourceTree = "<group>"; };
+		30B923A42BFCA1600098CB19 /* NewJournalCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewJournalCollectionViewCell.swift; path = "../../../MyMind copy 2/MyMind/Journal/NewJournalCollectionViewCell.swift"; sourceTree = "<group>"; };
+		30B923A52BFCA1600098CB19 /* JournalCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalCollectionViewCell.swift; path = "../../../MyMind copy 2/MyMind/Journal/JournalCollectionViewCell.swift"; sourceTree = "<group>"; };
+		30B923A62BFCA1600098CB19 /* AddJournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddJournalViewController.swift; path = "../../../MyMind copy 2/MyMind/Journal/AddJournalViewController.swift"; sourceTree = "<group>"; };
 		764297812BF4F3A000FA3A98 /* StartLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartLogin.storyboard; sourceTree = "<group>"; };
-		7642978B2BF5C0D700FA3A98 /* Journal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Journal.storyboard; sourceTree = "<group>"; };
-		7642978D2BF5C29500FA3A98 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		764297932BF5C35E00FA3A98 /* Prochat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Prochat.storyboard; sourceTree = "<group>"; };
 		764297952BF5C37D00FA3A98 /* Reminder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reminder.storyboard; sourceTree = "<group>"; };
 		764297972BF5C39900FA3A98 /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
@@ -64,8 +74,13 @@
 		7642978F2BF5C29E00FA3A98 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
-				7642978B2BF5C0D700FA3A98 /* Journal.storyboard */,
-				7642978D2BF5C29500FA3A98 /* JournalViewController.swift */,
+				30B923A62BFCA1600098CB19 /* AddJournalViewController.swift */,
+				30B923A32BFCA1600098CB19 /* Journal.storyboard */,
+				30B923A02BFCA1600098CB19 /* Journal.swift */,
+				30B923A52BFCA1600098CB19 /* JournalCollectionViewCell.swift */,
+				30B923A12BFCA1600098CB19 /* JournalDetailViewController.swift */,
+				30B923A22BFCA1600098CB19 /* JournalViewController.swift */,
+				30B923A42BFCA1600098CB19 /* NewJournalCollectionViewCell.swift */,
 			);
 			path = Journal;
 			sourceTree = "<group>";
@@ -213,8 +228,8 @@
 				767535BA2BFC807F00F54D34 /* ProfilePage.storyboard in Resources */,
 				CEC0FBCC2BF1CD2700C4266C /* Main.storyboard in Resources */,
 				764297822BF4F3A000FA3A98 /* StartLogin.storyboard in Resources */,
-				7642978C2BF5C0D700FA3A98 /* Journal.storyboard in Resources */,
 				764297962BF5C37D00FA3A98 /* Reminder.storyboard in Resources */,
+				30B923AA2BFCA1600098CB19 /* Journal.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,13 +240,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B923AB2BFCA1600098CB19 /* NewJournalCollectionViewCell.swift in Sources */,
 				7687F9252BFB48AD0090F31A /* ChatScreenViewController.swift in Sources */,
-				7642978E2BF5C29500FA3A98 /* JournalViewController.swift in Sources */,
 				CEC0FBC92BF1CD2700C4266C /* ViewController.swift in Sources */,
 				7642979C2BF5C3C500FA3A98 /* HomepageViewController.swift in Sources */,
+				30B923A72BFCA1600098CB19 /* Journal.swift in Sources */,
+				30B923A92BFCA1600098CB19 /* JournalViewController.swift in Sources */,
 				7642979A2BF5C3B800FA3A98 /* ReminderViewController.swift in Sources */,
 				CEC0FBC52BF1CD2700C4266C /* AppDelegate.swift in Sources */,
+				30B923AC2BFCA1600098CB19 /* JournalCollectionViewCell.swift in Sources */,
 				7642979E2BF5C3DA00FA3A98 /* ProchatViewController.swift in Sources */,
+				30B923AD2BFCA1600098CB19 /* AddJournalViewController.swift in Sources */,
+				30B923A82BFCA1600098CB19 /* JournalDetailViewController.swift in Sources */,
 				CEC0FBC72BF1CD2700C4266C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
