@@ -41,7 +41,7 @@ class ChatScreenViewController: MessagesViewController, MessagesDataSource, Mess
             sender: otherUser,
             messageId: "2",
             sentDate: Date().addingTimeInterval(-80400),
-            kind: .text("Hello John. I'm Dr. Farhan. I will be your therapist for the current session. How are you feeling today? 😁")))
+            kind: .text("Hello John. I'm Dr. Farhan. I will be your therapist for this session. How are you feeling today? 😁")))
         
         messages.append(Message(
             sender: currentUser,
@@ -53,7 +53,7 @@ class ChatScreenViewController: MessagesViewController, MessagesDataSource, Mess
             sender: otherUser,
             messageId: "4",
             sentDate: Date().addingTimeInterval(-68400),
-            kind: .text("That's good. It's important to take a deep breath to calm the mind")))
+            kind: .text("That's good. It's important to take a deep breath and relax")))
         
         messages.append(Message(
             sender: otherUser,
@@ -65,7 +65,7 @@ class ChatScreenViewController: MessagesViewController, MessagesDataSource, Mess
             sender: currentUser,
             messageId: "6",
             sentDate: Date().addingTimeInterval(-30400),
-            kind: .text("Wait a minute, I have a presentation to do 🫡")))
+            kind: .text("Just a sec, I have a presentation to do 🫡")))
 
         
         messagesCollectionView.messagesDataSource = self
@@ -73,6 +73,7 @@ class ChatScreenViewController: MessagesViewController, MessagesDataSource, Mess
         messagesCollectionView.messagesLayoutDelegate = self
         
         super.viewDidLoad()
+        iconOnNavBar()
     }
     
     func messageForItem(at indexPath: IndexPath, in messagesCollectionView: MessageKit.MessagesCollectionView) -> any MessageKit.MessageType {
@@ -81,6 +82,32 @@ class ChatScreenViewController: MessagesViewController, MessagesDataSource, Mess
     
     func numberOfSections(in messagesCollectionView: MessageKit.MessagesCollectionView) -> Int {
         return messages.count
+    }
+    
+    private func iconOnNavBar(){
+        let image = UIImage(systemName: "phone.fill")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(
+            image: image,
+            style: .plain,
+            target: self,
+            action: nil
+        )
+    }
+    
+    func configureAvatarView(_ avatarView: AvatarView, for message: any MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
+        let avatar = getAvatar(sender: message.sender)
+        avatarView.set(avatar: avatar)
+    }
+    
+    private func getAvatar(sender: SenderType) -> Avatar{
+        let therapistPic = UIImage(named: "Therapist")
+        if sender.senderId == "other"{
+            return Avatar(image: therapistPic, initials: "DrF")
+        }
+        else{
+            return Avatar(image: nil, initials: "You")
+        }
+        
     }
 
 }
