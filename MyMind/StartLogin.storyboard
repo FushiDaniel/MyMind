@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L21-xl-zQT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mi6-Ty-jxM">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -49,7 +49,7 @@
                 <navigationController id="e8x-pQ-Vm9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person" id="91K-Re-72G"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ro2-KS-fex">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -97,7 +97,7 @@
                     <tabBarItem key="tabBarItem" title="Journal" image="square.and.pencil" catalog="system" id="NG2-cu-b0B" userLabel="ToJournal"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ta-0x-XTA">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -116,7 +116,7 @@
                     <tabBarItem key="tabBarItem" title="Pro-Chat" image="text.bubble" catalog="system" id="XIw-aF-Dxg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A1h-SR-LRE">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -135,7 +135,7 @@
                     <tabBarItem key="tabBarItem" title="Reminder" image="list.bullet" catalog="system" selectedImage="list.bullet" id="W3a-8U-Vph"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kQb-fh-XS3">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -154,7 +154,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="YzW-Fh-VWA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ht7-2f-2of">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -254,6 +254,15 @@
                                     <constraint firstAttribute="height" constant="50" id="HTa-8V-EI5"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDP-FR-Tmd">
+                                <rect key="frame" x="116" y="586" width="162" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Continue as guest"/>
+                                <connections>
+                                    <segue destination="L21-xl-zQT" kind="show" id="fuQ-1T-SNK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V76-RP-fY1"/>
                         <color key="backgroundColor" red="0.98823529480000005" green="1" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -284,10 +293,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OAa-CZ-1yJ"/>
-                    <connections>
-                        <outlet property="email" destination="Zen-sr-zOJ" id="0az-1C-T7M"/>
-                        <outlet property="pass" destination="A73-8f-lFd" id="yOT-W1-nN0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2el-vq-Byo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -408,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yWP-c0-820" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="980.91603053435108" y="742.95774647887333"/>
+            <point key="canvasLocation" x="2091" y="-35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nYU-gB-8oY">
@@ -430,6 +435,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Flt-hn-MZv"/>
         <segue reference="HRq-0V-Rad"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.61960786580000005" green="0.80392158030000005" blue="0.58039218189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
