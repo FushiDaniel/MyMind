@@ -9,6 +9,10 @@ import UIKit
 
 class TextBViewController: UIViewController {
 
+    @IBOutlet var email: UITextField!
+    
+    @IBOutlet var pass: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +30,12 @@ class TextBViewController: UIViewController {
     }
     */
 
+}
+extension UITextField {
+    func clipToCircle(){
+        self.layoutIfNeeded()
+        self.layer.borderColor = UIColor.systemYellow.cgColor
+        self.layer.borderWidth = 10.0
+
+    }
 }
