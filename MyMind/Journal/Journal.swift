@@ -16,7 +16,7 @@ enum JournalItem {
 struct Journal {
     let title: String
     var content: String
-    let date: Date
+    var date: Date
     var image: UIImage?
     var mood: String
 }

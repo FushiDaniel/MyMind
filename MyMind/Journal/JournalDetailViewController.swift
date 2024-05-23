@@ -34,7 +34,11 @@ class JournalDetailViewController: UIViewController {
             titleLabel.textColor = .black
             contentLabel.text = journal.content
             navigationItem.titleView = titleLabel
-            moodLabel.text = "Your mood today is: \(journal.mood)"
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd MMM yyyy"
+            let dateString = dateFormatter.string(from: journal.date)
+            moodLabel.text = "Your mood on \(dateString) is: \(journal.mood)"
+            moodLabel.font = UIFont.boldSystemFont(ofSize: 16)
             
             if let image = journal.image {
                 imageView.image = image
