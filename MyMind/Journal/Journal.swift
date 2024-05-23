@@ -18,4 +18,5 @@ struct Journal {
     var content: String
     let date: Date
     var image: UIImage?
+    var mood: String
 }
