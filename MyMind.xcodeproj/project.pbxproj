@@ -17,9 +17,7 @@
 		764297822BF4F3A000FA3A98 /* StartLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297812BF4F3A000FA3A98 /* StartLogin.storyboard */; };
 		764297942BF5C35E00FA3A98 /* Prochat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297932BF5C35E00FA3A98 /* Prochat.storyboard */; };
 		764297962BF5C37D00FA3A98 /* Reminder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297952BF5C37D00FA3A98 /* Reminder.storyboard */; };
-		764297982BF5C39900FA3A98 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764297972BF5C39900FA3A98 /* Homepage.storyboard */; };
 		7642979A2BF5C3B800FA3A98 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764297992BF5C3B800FA3A98 /* ReminderViewController.swift */; };
-		7642979C2BF5C3C500FA3A98 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642979B2BF5C3C500FA3A98 /* HomepageViewController.swift */; };
 		7642979E2BF5C3DA00FA3A98 /* ProchatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642979D2BF5C3DA00FA3A98 /* ProchatViewController.swift */; };
 		767535BA2BFC807F00F54D34 /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767535B92BFC807F00F54D34 /* ProfilePage.storyboard */; };
 		7687F9252BFB48AD0090F31A /* ChatScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687F9242BFB48AD0090F31A /* ChatScreenViewController.swift */; };
@@ -30,6 +28,8 @@
 		CEC0FBCC2BF1CD2700C4266C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FBCA2BF1CD2700C4266C /* Main.storyboard */; };
 		CEC0FBCE2BF1CD2900C4266C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FBCD2BF1CD2900C4266C /* Assets.xcassets */; };
 		CEC0FBD12BF1CD2900C4266C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FBCF2BF1CD2900C4266C /* LaunchScreen.storyboard */; };
+		F35EEF8C2BFED50C005D2716 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35EEF8A2BFED50C005D2716 /* Homepage.storyboard */; };
+		F35EEF8D2BFED50C005D2716 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EEF8B2BFED50C005D2716 /* HomepageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +43,7 @@
 		764297812BF4F3A000FA3A98 /* StartLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartLogin.storyboard; sourceTree = "<group>"; };
 		764297932BF5C35E00FA3A98 /* Prochat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Prochat.storyboard; sourceTree = "<group>"; };
 		764297952BF5C37D00FA3A98 /* Reminder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reminder.storyboard; sourceTree = "<group>"; };
-		764297972BF5C39900FA3A98 /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
 		764297992BF5C3B800FA3A98 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
-		7642979B2BF5C3C500FA3A98 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		7642979D2BF5C3DA00FA3A98 /* ProchatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProchatViewController.swift; sourceTree = "<group>"; };
 		767535B92BFC807F00F54D34 /* ProfilePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfilePage.storyboard; sourceTree = "<group>"; };
 		7687F9242BFB48AD0090F31A /* ChatScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +55,8 @@
 		CEC0FBCD2BF1CD2900C4266C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC0FBD02BF1CD2900C4266C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC0FBD22BF1CD2A00C4266C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F35EEF8A2BFED50C005D2716 /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
+		F35EEF8B2BFED50C005D2716 /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 		764297902BF5C2F000FA3A98 /* Homepage */ = {
 			isa = PBXGroup;
 			children = (
-				764297972BF5C39900FA3A98 /* Homepage.storyboard */,
-				7642979B2BF5C3C500FA3A98 /* HomepageViewController.swift */,
+				F35EEF8A2BFED50C005D2716 /* Homepage.storyboard */,
+				F35EEF8B2BFED50C005D2716 /* HomepageViewController.swift */,
 			);
 			path = Homepage;
 			sourceTree = "<group>";
@@ -221,11 +221,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				764297982BF5C39900FA3A98 /* Homepage.storyboard in Resources */,
 				CEC0FBD12BF1CD2900C4266C /* LaunchScreen.storyboard in Resources */,
 				CEC0FBCE2BF1CD2900C4266C /* Assets.xcassets in Resources */,
 				764297942BF5C35E00FA3A98 /* Prochat.storyboard in Resources */,
 				767535BA2BFC807F00F54D34 /* ProfilePage.storyboard in Resources */,
+				F35EEF8C2BFED50C005D2716 /* Homepage.storyboard in Resources */,
 				CEC0FBCC2BF1CD2700C4266C /* Main.storyboard in Resources */,
 				764297822BF4F3A000FA3A98 /* StartLogin.storyboard in Resources */,
 				764297962BF5C37D00FA3A98 /* Reminder.storyboard in Resources */,
@@ -240,11 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35EEF8D2BFED50C005D2716 /* HomepageViewController.swift in Sources */,
 				7604077B2BFD92EB002A91CD /* JournalCollectionViewCell.swift in Sources */,
 				7687F9252BFB48AD0090F31A /* ChatScreenViewController.swift in Sources */,
 				CEC0FBC92BF1CD2700C4266C /* ViewController.swift in Sources */,
 				760407772BFD9265002A91CD /* Journal.swift in Sources */,
-				7642979C2BF5C3C500FA3A98 /* HomepageViewController.swift in Sources */,
 				760407792BFD92AC002A91CD /* AddJournalViewController.swift in Sources */,
 				30B923A92BFCA1600098CB19 /* JournalViewController.swift in Sources */,
 				7604077F2BFD934D002A91CD /* NewJournalCollectionViewCell.swift in Sources */,
