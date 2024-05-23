@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YZi-Ku-Lkd">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="lFX-TD-w3j">
+            <objects>
+                <viewController id="YZi-Ku-Lkd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4cx-so-GfJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ProfilePage" translatesAutoresizingMaskIntoConstraints="NO" id="CNZ-HM-qS8">
+                                <rect key="frame" x="10" y="64" width="375" height="584"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Qx-A9-bKv"/>
+                        <color key="backgroundColor" red="0.99215686319999996" green="1" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="CNZ-HM-qS8" firstAttribute="centerX" secondItem="4cx-so-GfJ" secondAttribute="centerX" id="2yc-vw-Ezo"/>
+                            <constraint firstItem="CNZ-HM-qS8" firstAttribute="leading" secondItem="2Qx-A9-bKv" secondAttribute="leading" constant="10" id="FSV-m4-mF1"/>
+                            <constraint firstItem="2Qx-A9-bKv" firstAttribute="trailing" secondItem="CNZ-HM-qS8" secondAttribute="trailing" constant="10" id="VHH-Hz-Ud3"/>
+                            <constraint firstItem="CNZ-HM-qS8" firstAttribute="top" secondItem="2Qx-A9-bKv" secondAttribute="top" constant="5" id="q0Q-03-gsQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="a9p-NX-4i4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3G3-I6-KF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6101.5267175572517" y="2155.6338028169016"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.61960786580000005" green="0.80392158030000005" blue="0.58039218189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <resources>
+        <image name="ProfilePage" width="280.5" height="447"/>
+    </resources>
+</document>
