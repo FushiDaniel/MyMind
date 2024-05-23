@@ -35,7 +35,6 @@ class JournalViewController: UIViewController, UICollectionViewDataSource, UICol
         case .newJournal:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewJournalCell", for: indexPath) as! NewJournalCollectionViewCell
             cell.newJournalLabel.text = "New Journal"
-            cell.backgroundColor = UIColor.lightGray
             return cell
             
         case .savedjournal(let journal):
@@ -82,17 +81,23 @@ class JournalViewController: UIViewController, UICollectionViewDataSource, UICol
                 addJournalVC.delegate = self
             }
         } else if segue.identifier == "ShowJournalDetailSegue" {
-            if let detailVC = segue.destination as? JournalDetailViewController, let journal = sender as? Journal {
-                detailVC.journal = journal
+            if let detailVC = segue.destination as? JournalDetailViewController, 
+                let journal = sender as? Journal {
+                    if let indexPath = collectionView.indexPathsForSelectedItems?.first {
+                        detailVC.journal = journal
+                        detailVC.journalIndex = indexPath.row
+                        detailVC.delegate = self
+                }
             }
         }
     }
+
     // MARK: - AddJournalViewControllerDelegate
-    func didSaveNewJournal(title: String, content: String, image: UIImage?)
+    func didSaveNewJournal(title: String, content: String, image: UIImage?, mood: String)
      {
          journalCount += 1
          let newJournalTitle = "Journal \(journalCount)"
-         let newJournal = Journal(title: newJournalTitle, content: content, date: Date())
+         let newJournal = Journal(title: newJournalTitle, content: content, date: Date(), image: image, mood: mood)
          journalItems.insert(.savedjournal(newJournal), at: 1) // Add saved journal after "New Journal" item
          collectionView.reloadData()
          
@@ -127,3 +132,11 @@ class JournalViewController: UIViewController, UICollectionViewDataSource, UICol
         }
     }*/
 }
+
+extension JournalViewController: DetailJournalViewControllerDelegate {
+    func didDeleteJournal(at index: Int) {
+        journalItems.remove(at: index)
+        collectionView.reloadData()
+    }
+}
+

@@ -8,13 +8,21 @@
 
 import UIKit
 
+protocol DetailJournalViewControllerDelegate: AnyObject {
+    func didDeleteJournal(at index: Int)
+}
+
 class JournalDetailViewController: UIViewController {
     
     var journal: Journal?
     var journalImage: UIImage?
+    var journalIndex: Int?
+    weak var delegate: DetailJournalViewControllerDelegate?
     
     @IBOutlet var contentLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var deleteButton: UIButton!
+    @IBOutlet var moodLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +34,7 @@ class JournalDetailViewController: UIViewController {
             titleLabel.textColor = .black
             contentLabel.text = journal.content
             navigationItem.titleView = titleLabel
+            moodLabel.text = "Your mood today is: \(journal.mood)"
             
             if let image = journal.image {
                 imageView.image = image
@@ -47,6 +56,23 @@ class JournalDetailViewController: UIViewController {
         performSegue(withIdentifier: "EditJournalSegue", sender: nil)
     }
     
+    @IBAction func deleteButtonTapped(_ sender: UIButton) {
+            // Show the alert to confirm deletion
+            let alertController = UIAlertController(title: "Delete Journal", message: "Are you sure you want to delete this journal entry?", preferredStyle: .alert)
+            
+            let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { [weak self] _ in
+                guard let self = self, let index = self.journalIndex else { return }
+                self.delegate?.didDeleteJournal(at: index)
+                self.navigationController?.popViewController(animated: true)
+            }
+            alertController.addAction(deleteAction)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alertController.addAction(cancelAction)
+            
+            present(alertController, animated: true, completion: nil)
+        }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "EditJournalSegue" {
             if let addJournalVC = segue.destination as? AddJournalViewController {
@@ -57,7 +83,9 @@ class JournalDetailViewController: UIViewController {
             if let detailVC = segue.destination as? JournalDetailViewController,
                let journal = sender as? Journal {
                 detailVC.journal = journal
-                detailVC.journalImage = journalImage
+                detailVC.journalImage = journal.image
+                
+                print("Journal image set: \(journal.image)") // Add this line to check if the image is being set
             }
         }
     }
@@ -72,7 +100,7 @@ class JournalDetailViewController: UIViewController {
 }
 
 extension JournalDetailViewController: AddJournalViewControllerDelegate {
-    func didSaveNewJournal(title: String, content: String, image: UIImage?) {
+    func didSaveNewJournal(title: String, content: String, image: UIImage?, mood: String) {
         updateContentLabel(with: content)
         updateImage(with: image)
     }
