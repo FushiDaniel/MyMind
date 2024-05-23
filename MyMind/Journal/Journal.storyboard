@@ -38,7 +38,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbm-Je-Ltb">
                                                     <rect key="frame" x="39" y="64.666666666666671" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -47,6 +47,7 @@
                                                 <constraint firstItem="xbm-Je-Ltb" firstAttribute="centerY" secondItem="Tcs-iU-6Tg" secondAttribute="centerY" id="dLk-Uc-Uhj"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.36078431372549019" green="0.65490196078431373" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="newJournalLabel" destination="xbm-Je-Ltb" id="Iiu-YU-69h"/>
                                         </connections>
@@ -61,7 +62,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9a-J0-4Sn">
                                                     <rect key="frame" x="39.333333333333329" y="64.666666666666671" width="41.333333333333329" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -70,6 +71,7 @@
                                                 <constraint firstItem="H9a-J0-4Sn" firstAttribute="centerX" secondItem="XRB-E6-WKL" secondAttribute="centerX" id="KBu-0a-des"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.65490196079999996" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="titleLabel" destination="H9a-J0-4Sn" id="vOX-h8-yOJ"/>
                                         </connections>
@@ -116,7 +118,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VX2-YN-MZN">
-                                <rect key="frame" x="0.0" y="163" width="393" height="221"/>
+                                <rect key="frame" x="0.0" y="164" width="393" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEs-fc-oZ3">
+                                <rect key="frame" x="118" y="717" width="158" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="trash.fill" catalog="system" title="Delete Journal">
+                                    <color key="baseBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="5Dj-o9-HCX" eventType="touchDown" id="vT1-eM-mRw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF2-qH-ewX">
+                                <rect key="frame" x="1" y="89" width="393" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -129,7 +149,9 @@
                     <navigationItem key="navigationItem" id="Jto-WI-3xl"/>
                     <connections>
                         <outlet property="contentLabel" destination="VX2-YN-MZN" id="rlq-xA-AfI"/>
+                        <outlet property="deleteButton" destination="iEs-fc-oZ3" id="3I8-Ah-JbA"/>
                         <outlet property="imageView" destination="tJD-Kc-iTu" id="igv-MO-0V9"/>
+                        <outlet property="moodLabel" destination="aF2-qH-ewX" id="MtT-0o-dTk"/>
                         <segue destination="PWc-lm-A4I" kind="show" identifier="EditJournalSegue" id="3mT-Qo-pEr"/>
                     </connections>
                 </viewController>
@@ -282,17 +304,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2c1-Ao-LWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7288" y="1640"/>
+            <point key="canvasLocation" x="7372" y="1652"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3mT-Qo-pEr"/>
+        <segue reference="eQ3-O2-8sr"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="location.fill" catalog="system" width="128" height="119"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="trash.fill" catalog="system" width="117" height="128"/>
         <image name="waveform" catalog="system" width="125" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

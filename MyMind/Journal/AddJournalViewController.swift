@@ -4,7 +4,7 @@ import CoreLocation
 import Photos
 
 protocol AddJournalViewControllerDelegate: AnyObject {
-    func didSaveNewJournal(title: String, content: String, image: UIImage?)
+    func didSaveNewJournal(title: String, content: String, image: UIImage?, mood: String)
 }
 
 class AddJournalViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate, AVAudioRecorderDelegate {
@@ -80,16 +80,28 @@ class AddJournalViewController: UIViewController, UIImagePickerControllerDelegat
     
     // MARK: - Save Button Delegate
     @objc private func doneButtonTapped() {
+        guard let selectedEmojiButton = selectedEmojiButton else {
+                // Show an alert if no emoji button is selected
+                let alert = UIAlertController(title: "Select Mood", message: "Please select your mood by tapping an emoji.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                present(alert, animated: true, completion: nil)
+                return
+            }
+        
         if let newJournalContent = journalContentTextView.text, !newJournalContent.isEmpty, newJournalContent != "Start writing..." {
-             //Edit Journal
+            let selectedEmoji = selectedEmojiButton.titleLabel?.text ?? ""
+            
+            //Edit Journal
             if var journal = journalToEdit {
                 journal.content = newJournalContent
-                delegate?.didSaveNewJournal(title: journal.title, content: journal.content, image: selectedImage)
+                journal.mood = selectedEmoji
+                delegate?.didSaveNewJournal(title: journal.title, content: journal.content, image: selectedImage, mood: journal.mood)
                 navigationController?.popViewController(animated: true)
             } else {
-                //New Journal
+            
+            //New Journal
                 let newJournalTitle = "Journal Entry" // Or derive a title from the content
-                delegate?.didSaveNewJournal(title: newJournalTitle, content: newJournalContent, image: selectedImage)
+                delegate?.didSaveNewJournal(title: newJournalTitle, content: newJournalContent, image: selectedImage, mood: selectedEmoji)
                 navigationController?.popViewController(animated: true)
             }
         }
