@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302A98BD2BFF048A00C09B73 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302A98BC2BFF048A00C09B73 /* AddReminderViewController.swift */; };
 		30B923A92BFCA1600098CB19 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B923A22BFCA1600098CB19 /* JournalViewController.swift */; };
 		30B923AA2BFCA1600098CB19 /* Journal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B923A32BFCA1600098CB19 /* Journal.storyboard */; };
 		760407772BFD9265002A91CD /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760407762BFD9265002A91CD /* Journal.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		302A98BC2BFF048A00C09B73 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
 		30B923A22BFCA1600098CB19 /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		30B923A32BFCA1600098CB19 /* Journal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Journal.storyboard; sourceTree = "<group>"; };
 		760407762BFD9265002A91CD /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				764297952BF5C37D00FA3A98 /* Reminder.storyboard */,
 				764297992BF5C3B800FA3A98 /* ReminderViewController.swift */,
+				302A98BC2BFF048A00C09B73 /* AddReminderViewController.swift */,
 			);
 			path = Reminder;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				7642979A2BF5C3B800FA3A98 /* ReminderViewController.swift in Sources */,
 				CEC0FBC52BF1CD2700C4266C /* AppDelegate.swift in Sources */,
 				7642979E2BF5C3DA00FA3A98 /* ProchatViewController.swift in Sources */,
+				302A98BD2BFF048A00C09B73 /* AddReminderViewController.swift in Sources */,
 				CEC0FBC72BF1CD2700C4266C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
